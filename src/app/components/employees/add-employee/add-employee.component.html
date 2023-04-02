@@ -1,1 +1,67 @@
-<p>add-employee works!</p>
+
+<div class="container my-5 ">
+    <h1 class="mb-3"> Employee Info</h1>
+    <form #form ="ngForm" (ngSubmit)="AddEmployee()">
+        <div class="row">
+            
+     <div class="col-md-6">
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="Name">Name</label>
+            <div class="col-md-9">
+                <input type="text" class="form-control" id="Name" placeholder="Enter Name"
+                name="name" [(ngModel)]="AddEmpReq.name">
+
+            </div>
+        </div>
+     
+<br>
+        <div class="form-group row">
+          <label  for="Email" class="col-md-3 col-form-label">Email</label>
+          <div class="col-md-9">
+          <input type="email" class="form-control" id="Email" placeholder="Enter email"
+          name="email" [(ngModel)]="AddEmpReq.email">
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="col-md-6">
+        <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="Phone">Phone</label>
+            <div class="col-md-9">
+                <input type="number" class="form-control" id="Phone" placeholder="Enter Phone"
+                name="phone" [(ngModel)]="AddEmpReq.phone">
+
+            </div>
+        </div>
+   
+<br>
+<div class="form-group row">
+    <label class="col-md-3 col-form-label" for="Salary">Salary</label>
+    <div class="col-md-9">
+        <input type="number" class="form-control" id="Salary" placeholder="Enter Salary"
+        name="salary" [(ngModel)]="AddEmpReq.salary">
+
+    </div>
+  </div>
+</div>
+<br>
+<div class="col-md-6">
+    <br>
+    <div class="form-group row">
+        <label class="col-md-3 col-form-label" for="Department">Department</label>
+        <div class="col-md-9">
+            <input type="text" class="form-control" id="Department" placeholder="Enter Department"
+            name="department" [(ngModel)]="AddEmpReq.department">
+
+        </div>
+        </div>
+</div>
+<br>
+</div>
+<br>
+<div>
+    <button type="submit" class="btn btn-primary" style="text-align: end; margin-left: 1132px;">Submit</button>
+
+</div>
+      </form>
+</div>
